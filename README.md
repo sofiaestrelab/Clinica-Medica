@@ -2,7 +2,7 @@
 
 Aplicação em **Python + Tkinter** para emitir, organizar, consultar e chamar senhas de atendimento em uma clínica, aplicando os conceitos de **Estrutura de Dados II**: filas FIFO (lista encadeada), fila de prioridade, modularização e tratamento de exceções.
 
-> Disciplina: Estrutura de Dados II · Aluna: Sofia Estrela Bernardes 
+> Disciplina: Estrutura de Dados II · Aluna: Sofia Estrela Bernardes · Link vídeo: https://youtu.be/UhBWugdk8Fc
 
 ## Funcionalidades
 
