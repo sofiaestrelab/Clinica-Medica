@@ -1,8 +1,8 @@
 # Sistema de Gerenciamento de Senhas para Clínica Médica
 
-Aplicação desktop em **Python + Tkinter** para emitir, organizar, consultar e chamar senhas de atendimento em uma clínica, aplicando os conceitos de **Estrutura de Dados II**: filas FIFO (lista encadeada), fila de prioridade, modularização e tratamento de exceções.
+Aplicação em **Python + Tkinter** para emitir, organizar, consultar e chamar senhas de atendimento em uma clínica, aplicando os conceitos de **Estrutura de Dados II**: filas FIFO (lista encadeada), fila de prioridade, modularização e tratamento de exceções.
 
-> Disciplina: Estrutura de Dados II · Equipe: _(preencher nomes dos integrantes)_ · Vídeo de demonstração: _(colar link)_
+> Disciplina: Estrutura de Dados II · Aluna: Sofia Estrela Bernardes 
 
 ## Funcionalidades
 
@@ -57,7 +57,7 @@ Esse comportamento é verificado em `tests/test_sistema.py` (`test_chamada_respe
 espera estimada = pacientes à frente × 30 minutos
 ```
 
-"À frente" é calculado na **ordem real de atendimento** (preferenciais primeiro), então a estimativa já considera a política de prioridade.
+A frente é calculado na **ordem real de atendimento** (preferenciais primeiro), então a estimativa já considera a política de prioridade.
 
 Hipóteses adotadas:
 
@@ -84,7 +84,6 @@ sistema-senhas-clinica/
 
 Separação de responsabilidades: `interface.py` só cuida da tela; toda a regra de negócio está em `gerenciador.py`, apoiada pelas estruturas de `fila.py`.
 
-## Estruturas de dados
 
 - **`FilaFIFO`**: lista encadeada com ponteiros de início e fim; `enfileirar` e `desenfileirar` em O(1).
 - **`FilaPrioridade`**: conjunto de `FilaFIFO`, uma por nível, consultadas em ordem de prioridade (preferencial → normal). Também fornece a ordem real de atendimento usada na lista de espera e na estimativa.
